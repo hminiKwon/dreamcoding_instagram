@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.12.3",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.24.1",
     "next": "14.0.4",
+    "next-auth": "^4.24.5",
     "next-sanity": "^7.0.10",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.0.1",
     "sanity": "^3.24.1",
     "styled-components": "^6.1.8"
   },
