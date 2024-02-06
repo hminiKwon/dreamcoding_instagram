@@ -11,7 +11,7 @@ export default {
         },
         {
             title: "Photo",
-            name: "phoro",
+            name: "photo",
             type: "image",
         },
         {
@@ -32,8 +32,8 @@ export default {
             type: "array",
             of: [
                 {
-                    title: "Comments",
-                    name: "comments",
+                    title: "Comment",
+                    name: "comment",
                     type: "document",
                     fields: [
                         {
@@ -56,14 +56,14 @@ export default {
         select: {
             title: "comments.0.comment",
             authorName: "author.name",
-            authorUserName: "author.username",
+            authorUsername: "author.username",
             media: "photo",
         },
         prepare(selection) {
-            const { title, authorName, authorUserName, media } = selection;
+            const { title, authorName, authorUsername, media } = selection;
             return {
                 title,
-                subtitle: `by ${authorName} (${authorUserName})`,
+                subtitle: `by ${authorName} (${authorUsername})`,
                 media,
             };
         },
